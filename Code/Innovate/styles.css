@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, white, white);
+}
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: rgb(122, 236, 217);
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+
+}
+.container .title {
+  padding: 45px, 50px;
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+
+}
+.container form .user-details {
+  padding: 45px, 60px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form .user-details .form-group {
+  border-radius: 100%;
+  width: calc(100% / 1 - 20px);
+  margin: 20px 0 12px 0;
+  height: 45px;
+}
+.user-details .form-group input {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .form-group details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .form-group input:focus,
+.user-details .form-group input:valid {
+  border-color: #9b59b6;
+}
+.user-details .form-group select {
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+}
+form .button{
+  height: 45px;
+  margin: 25px 0;
+}
+form .button input {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: black;
+  background-color: grey;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1;
+  border-radius: 5px;
+}
+form .button input:hover {
+  background: white;
+}
+.container-img img{
+  border-radius: 5rem;
+  width: 100%;
+  
+}
+.container-img h1{
+  align-items: center;
+  align-content: center;
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+@media (max-width: 360px){
+  .container-img h1{
+    position: 50px 4%;
+  }
+}
