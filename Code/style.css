@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-padding-top: 4rem;
+   scroll-behavior: smooth;
+   list-style: none;
+   text-decoration: none;
+}
+
+:root {
+   --main-color: #27005D;
+   --second-color: #edeae3;
+   --text-color: #1b1b1b;
+   --bg-color: #fff;
+}
+
+section{
+   padding: 50px 100px;
+}
+
+img {
+   width: 100%;
+}
+
+body {
+   color: var(--text-color);
+}
+
+.logo img{
+   width: 60px;
+}
+.navbar{
+   display: flex;
+}
+.navbar a{
+   padding: 8px 17px;
+   color: var(--bg-color);
+   font-size: 1.5rem;
+   align-items: flex-start;
+   text-transform: none;
+   font-weight: 600;
+}
+
+header{
+   position: fixed;
+   width: 100%;
+   top: 0;
+   right: 0;
+   z-index: 1000;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 100px;
+   transition: 0.5s linear;
+   background: var(--text-color);
+}
+
+.home{
+   width: 100%;
+   min-height: 100lvh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+   align-items: center;
+   gap: 1.5rem;
+}
+
+.home-text p{
+   font-size: 0.938rem;
+   margin: 2rem 0.1rem;
+}
+
+.btn {
+   padding: 10px 40px;
+   border-radius: 0.3rem;
+   background-position: var(--main-color);
+   background-color: #391e5a;
+   color: #f9ffff;
+   font-weight: 500;
+}
+
+.btn:hover {
+   background:#17073c;
+}
+
+.about{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+   align-items: center;
+   gap: 1.5rem;
+}
+
+.about-img h1{
+   font-size: 3.4rem;
+   color: var(--main-color);
+   text-transform: none;
+   letter-spacing: 1px;
+   gap: 1.5rem;
+}
+.about-img img{
+   border-radius: 0.5rem;
+}
+.about-text h2{
+   font-size: 2rem;
+   text-transform: none;
+}
+.about-text p{
+   font-size: 0.938rem;
+   margin: 2rem 0 1.8rem;
+}
+.user-info {
+   display: flex;
+   align-items: center;
+   border: 1px solid #ccc;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.user-info img {
+   width: 20px; 
+}
+
+.user-info p,
+.user-info span {
+   margin-left: 10px; 
+}
+
+.reg {
+   display: flex;
+   align-items: center;
+   border: 1px solid #ccc;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.reg img {
+   width: 10px; 
+}
+
+.reg p,
+.reg span {
+   margin-left: 10px; 
+}
+
+.mode {
+   display: flex;
+   align-items: center;
+   border: 1px solid #ccc;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.mode img {
+   width: 10px; 
+}
+
+.mode p,
+.mode span {
+   margin-left: 10px; 
+}
+
+.crit {
+   display: flex;
+   align-items: center;
+   border: 1px solid #ccc;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.crit img {
+   width: 10px; 
+}
+
+.crit p,
+.crit span {
+   margin-left: 10px; 
+}
+
+.st {
+   display: flex;
+   align-items: center;
+   border: 1px solid #ccc;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.st img {
+   width: 10px; 
+}
+
+.st p,
+.st span {
+   margin-left: 10px; 
+}
+
+.con {
+   display: flex;
+   align-items: center;
+   border: 1px solid #ccc;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.con img {
+   width: 10px; 
+}
+
+.con p,
+.con span {
+   margin-left: 10px; 
+}
+
+.rew {
+   display: flex;
+   align-items: center;
+   border: 1px solid #ccc;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.rew img {
+   width: 10px; 
+}
+
+.rew p,
+.rew span {
+   margin-left: 10px; 
+}
+
+.loc {
+   display: flex;
+   align-items: center;
+   border: 1px solid #ccc;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.loc img {
+   width: 10px; 
+}
+
+.loc p,
+.loc span {
+   margin-left: 10px; 
+}
+
+.date {
+   display: flex;
+   align-items: center;
+   border: 1px solid #ccc;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.date img {
+   width: 10px; 
+}
+
+.date p,
+.date span {
+   margin-left: 10px; 
+}
+
+@media (max-width: 1058px) {
+   header {
+      padding: 16px 60px;
+   }
+   section{
+      padding: 50px 60px;
+   }
+   .about-text p,
+   .user-info p,
+   .reg p,
+   .mode p,
+   .loc p,
+   .con p,
+   .crit p,
+   .rew p,
+   .date p,
+   .st p {
+      font-size: 2.4rem;
+   }
+}
+
+@media (max-width: 991px) {
+   header {
+      padding: 16px 4%;
+   }
+   section{
+      padding: 50px 4%;
+   }
+   .about-text p,
+   .user-info p,
+   .reg p,
+   .mode p,
+   .loc p,
+   .con p,
+   .crit p,
+   .rew p,
+   .date p,
+   .st p {
+      font-size: 2rem;
+   }
+}
+
+@media (max-width: 768px) {
+   header {
+      padding: 12px 4%;
+   }
+   .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      background: #1b1b1b;
+      row-gap: 1.4rem;
+      padding: 1px;
+      transition: 0.3s;
+      text-align: center;
+   }
+   section{
+      padding: 50px 4%;
+   }
+   .about-text p,
+   .user-info p,
+   .reg p,
+   .mode p,
+   .loc p,
+   .con p,
+   .crit p,
+   .rew p,
+   .date p,
+   .st p {
+      font-size: 1rem;
+}
+}
+
+@media (max-width: 360px){
+   header{
+      padding: 9px 4%;
+   }
+   .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      background: #1b1b1b;
+      row-gap: 1.4rem;
+      padding: 1px;
+      transition: 0.3s;
+      text-align: center;
+   }
+   section{
+      padding: 50px 4%;
+   }
+   .about-text p,
+   .user-info p,
+   .reg p,
+   .mode p,
+   .loc p,
+   .con p,
+   .crit p,
+   .rew p,
+   .date p,
+   .st p {
+      font-size: 1rem;
+}
+}
